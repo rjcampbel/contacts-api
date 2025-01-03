@@ -9,11 +9,6 @@ contacts = [
    { 'id': '4', 'name' : 'Betty', 'phone': '612-234-3456' },
 ]
 
-@app.route('/hello')
-def hello_route():
-   print('I have received a request on the /hello endpoint!')
-   return '<h1>Hello from the server!</h1>'
-
 @app.get('/contacts')
 def list_contacts():
    return contacts
